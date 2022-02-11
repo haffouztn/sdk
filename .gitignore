@@ -1,0 +1,35 @@
+.DS_Store
+node_modules/
+dist/
+.build/
+
+# Serverless directories
+.serverless/
+.webpack
+
+# local env files
+
+.env*
+!.env.dist
+!.env.dev
+
+#exclude generated config files
+*-env.ts
+*-env.js
+*-env.json
+
+*.tsbuildinfo
+
+# Log files
+*.log
+*.old
+*.map
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

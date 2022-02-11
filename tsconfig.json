@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "downlevelIteration": true,
+    "module": "CommonJS",
+    "removeComments": true,
+    "strict": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "declaration": true, //.d.ts
+    "types": [
+      "node"
+    ],
+    "baseUrl": ".",
+    "lib": [
+      "es5",
+      "es6",
+      "dom",
+      "dom.iterable",
+      "es2015.collection",
+      "es2015.iterable",
+      "scripthost"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "./node_modules/vuetify/types",
+    ],
+    "outDir": "dist",
+    "rootDir": "src"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "test",
+    "dist",
+    "node_modules"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "seat-map-sdk",
+  "license": "proprietary",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "build": "rm -rf dist && tsc",
+    "watch": "rm -rf dist && tsc -w",
+    "postinstall": "yarn build"
+  },
+  "dependencies": {
+    "@types/node": "^15.12.2",
+    "framebus": "^5.1.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^4.28.5",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  }
+}
